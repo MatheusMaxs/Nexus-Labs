@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NEXUS LABS OFFICIAL DESIGN SYSTEM
+ * Inspirado na estética "Reflect" - minimalista, tecnológica, sofisticada
+ * Paleta rigorosa: Preto profundo, Branco puro, Vermelho vibrante, Cinza elegante
+ * ZERO cores dissonantes (laranja, amarelo, marrom, verde eliminados)
+ */
+
+@layer base {
+  :root {
+    /* === NEXUS LABS CORE PALETTE === */
+    --background: 0 0% 0%;              /* Preto profundo absoluto */
+    --foreground: 0 0% 100%;            /* Branco puro para texto principal */
+
+    --card: 0 0% 2%;                    /* Fundo de cards - preto sutilmente elevado */
+    --card-foreground: 0 0% 100%;       /* Texto em cards */
+
+    --popover: 0 0% 2%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 11 100% 50%;             /* Vermelho vibrante - COR DE DESTAQUE PRINCIPAL */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 8%;               /* Cinza escuro para elementos secundários */
+    --secondary-foreground: 0 0% 85%;   /* Cinza claro para texto secundário */
+
+    --muted: 0 0% 4%;                   /* Elementos sutis */
+    --muted-foreground: 0 0% 65%;       /* Texto muted - legível mas discreto */
+
+    --accent: 11 100% 50%;              /* Mesmo que primary - vermelho é nosso acento */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 12%;                 /* Bordas sutis */
+    --input: 0 0% 8%;                   /* Fundo de inputs */
+    --ring: 11 100% 50%;                /* Focus ring - vermelho */
+
+    --radius: 0.75rem;
+
+    /* === NEXUS LABS SEMANTIC TOKENS === */
+    --nexus-red: 11 100% 50%;           /* Vermelho principal - CTAs, destaques */
+    --nexus-red-glow: 11 100% 55%;      /* Vermelho com mais luminosidade para efeitos */
+    --nexus-black: 0 0% 0%;             /* Preto absoluto */
+    --nexus-white: 0 0% 100%;           /* Branco puro */
+    --nexus-gray-light: 0 0% 85%;       /* Cinza claro para textos secundários */
+    --nexus-gray-medium: 0 0% 65%;      /* Cinza médio para descrições */
+    --nexus-gray-dark: 0 0% 12%;        /* Cinza escuro para divisores */
+    
+    /* === GRADIENTS & EFFECTS === */
+    --gradient-radial-red: radial-gradient(circle, hsl(var(--nexus-red) / 0.15) 0%, transparent 70%);
+    --gradient-radial-core: radial-gradient(circle, hsl(var(--nexus-red) / 0.4) 0%, hsl(var(--nexus-red) / 0.1) 40%, transparent 70%);
+    --gradient-aura: 0 0 60px hsl(var(--nexus-red) / 0.3), 0 0 120px hsl(var(--nexus-red) / 0.1);
+    --gradient-subtle-glow: 0 0 40px hsl(var(--nexus-red) / 0.2);
+    
+    /* === ANIMATIONS & TRANSITIONS === */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.4s ease-in-out;
+    --transition-hover: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 11 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 0 0% 6%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 11 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 11 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* === NEXUS LABS PREMIUM EFFECTS === */
+  .nexus-glow {
+    box-shadow: var(--gradient-subtle-glow);
+  }
+  
+  .nexus-aura {
+    box-shadow: var(--gradient-aura);
+  }
+  
+  .nexus-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .nexus-hover {
+    transition: var(--transition-hover);
+  }
+  
+  /* === HERO SECTION ELEMENTS === */
+  .nexus-core {
+    background: var(--gradient-radial-core);
+    animation: nexus-pulse 4s ease-in-out infinite;
+  }
+  
+  .nexus-aura-ring {
+    background: var(--gradient-radial-red);
+    animation: nexus-float 6s ease-in-out infinite;
+  }
+  
+  .nexus-glass {
+    background: hsl(var(--nexus-white) / 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--nexus-white) / 0.08);
+  }
+  
+  /* === SPACING UTILITIES === */
+  .section-padding {
+    padding: 120px 0;
+  }
+  
+  .section-padding-sm {
+    padding: 80px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .section-padding {
+      padding: 80px 0;
+    }
+    
+    .section-padding-sm {
+      padding: 60px 0;
+    }
+  }
+}
+
+@layer utilities {
+  .text-nexus-red {
+    color: hsl(var(--nexus-red));
+  }
+  
+  .bg-nexus-red {
+    background-color: hsl(var(--nexus-red));
+  }
+  
+  .border-nexus-red {
+    border-color: hsl(var(--nexus-red));
+  }
+  
+  .hero-title {
+    font-size: 5rem !important;
+    margin-top: 70px;
+  }
+  
+  /* Custom spacing for hero CTA buttons */
+  .flex.flex-col.sm\:flex-row.gap-6.justify-center.items-center.pt-12.mb-20 {
+    margin-bottom: 50px;
+  }
+  
+  /* === BLACK HOLE BACKGROUND === */
+  .nexus-black-hole {
+    background: radial-gradient(circle at center, 
+      hsl(var(--nexus-red) / 0.8) 0%,
+      hsl(var(--nexus-red) / 0.4) 15%,
+      hsl(var(--nexus-red) / 0.2) 30%,
+      transparent 50%,
+      hsl(var(--nexus-black)) 70%,
+      hsl(var(--nexus-black)) 100%);
+    animation: nexus-black-hole 8s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 3rem !important;
+      margin-top: 50px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title {
+      font-size: 4rem !important;
+      margin-top: 60px;
+    }
+  }
+}
