@@ -179,9 +179,14 @@ export const Projects = () => {
                         variant="nexus" 
                         size="lg"
                         onClick={() => window.open(project.demoUrl, '_blank')}
-                        className="nexus-hover font-semibold"
+                        className="nexus-hover font-semibold w-full sm:w-auto"
                       >
-                        Ver Demo do Projeto {project.name.length > 25 ? project.name.substring(0, 25) + "..." : project.name}
+                        <span className="hidden sm:inline">
+                          Ver Demo do Projeto {project.name.length > 25 ? project.name.substring(0, 25) + "..." : project.name}
+                        </span>
+                        <span className="sm:hidden">
+                          Ver Demo {project.name.length > 15 ? project.name.substring(0, 15) + "..." : project.name}
+                        </span>
                       </Button>
                     )}
                   </div>
