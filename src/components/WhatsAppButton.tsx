@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 export const WhatsAppButton = () => {
   const openWhatsApp = () => {
-    const phoneNumber = "5566996563306"; // +55 (66) 99656-3306
+    const phoneNumber = "556699656306"; // +55 (66) 9965-6306
     const message = encodeURIComponent("Olá! Vamos desenvolver um site incrível juntos? 🚀");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };

@@ -46,7 +46,7 @@ export const ContactSection = () => {
     });
   };
   const openWhatsApp = () => {
-    const phoneNumber = "5566996563306"; // +55 (66) 99656-3306
+    const phoneNumber = "556699656306"; // +55 (66) 9965-6306
     const message = "Olá! Vamos desenvolver um site incrível juntos? 🚀";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -106,7 +106,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-foreground font-semibold">Telefone</p>
-                    <p className="text-muted-foreground">(66) 99656-3306</p>
+                    <p className="text-muted-foreground">(66) 9965-6306</p>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export const ContactSection = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="phone" className="text-white">Telefone *</Label>
-                    <Input id="phone" name="phone" value={formData.phone} onChange={handleInputChange} required className="bg-input border-border text-white placeholder-gray-400" placeholder="(66) 99656-3306" />
+                    <Input id="phone" name="phone" value={formData.phone} onChange={handleInputChange} required className="bg-input border-border text-white placeholder-gray-400" placeholder="(66) 9965-6306" />
                   </div>
                   
                   <div className="space-y-2">
