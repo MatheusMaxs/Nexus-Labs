@@ -28,6 +28,7 @@ export const Projects = () => {
         "Redução de 45% na taxa de rejeição",
         "Crescimento de 120% no tempo médio de sessão"
       ],
+      demoUrl: "https://moda-sustentavel-demo.vercel.app",
       icon: Shirt
     },
     {
@@ -39,6 +40,7 @@ export const Projects = () => {
         "Captação de R$ 2.5M em investimentos",
         "Melhoria de 90% na percepção da marca"
       ],
+      demoUrl: "https://startup-tech-demo.vercel.app",
       icon: Laptop
     },
     {
@@ -50,6 +52,7 @@ export const Projects = () => {
         "Diminuição de 85% em no-shows",
         "Aumento de 55% na satisfação do paciente"
       ],
+      demoUrl: "https://agendamento-clinicas-demo.vercel.app",
       icon: Calendar
     },
     {
@@ -61,6 +64,7 @@ export const Projects = () => {
         "Crescimento de 75% em inscrições",
         "Redução de 30% no custo de aquisição"
       ],
+      demoUrl: "https://eventos-ia-demo.vercel.app",
       icon: Tent
     },
     {
@@ -72,6 +76,7 @@ export const Projects = () => {
         "Redução de 40% no tempo de onboarding",
         "Aumento de 80% na produtividade das equipes"
       ],
+      demoUrl: "https://portal-corporativo-demo.vercel.app",
       icon: Building
     },
     {
@@ -83,6 +88,7 @@ export const Projects = () => {
         "ROI de 250% para os usuários",
         "Economia de R$ 1.2M coletivamente"
       ],
+      demoUrl: "https://energia-inteligente-demo.vercel.app",
       icon: Zap
     },
     {
@@ -94,6 +100,7 @@ export const Projects = () => {
         "Melhoria de 60% na qualidade dos matches",
         "Aumento de 45% na retenção de talentos"
       ],
+      demoUrl: "https://recrutamento-ia-demo.vercel.app",
       icon: Users
     }
   ];
