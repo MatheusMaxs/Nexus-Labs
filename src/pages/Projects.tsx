@@ -181,7 +181,7 @@ export const Projects = () => {
                         onClick={() => window.open(project.demoUrl, '_blank')}
                         className="nexus-hover font-semibold"
                       >
-                        Ver Demo do Projeto {project.name.split(' ')[0]} {project.name.split(' ')[1]}
+                        Ver Demo do Projeto {project.name.length > 25 ? project.name.substring(0, 25) + "..." : project.name}
                       </Button>
                     )}
                   </div>
