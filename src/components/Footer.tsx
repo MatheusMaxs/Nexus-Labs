@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -55,10 +57,10 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-6">Serviços</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white hover:text-primary nexus-transition">IA Generativa</a></li>
-                <li><a href="#" className="text-white hover:text-primary nexus-transition">Landing Pages</a></li>
-                <li><a href="#" className="text-white hover:text-primary nexus-transition">Automação</a></li>
-                <li><a href="#" className="text-white hover:text-primary nexus-transition">Desenvolvimento</a></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-white hover:text-primary nexus-transition text-left">IA Generativa</button></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-white hover:text-primary nexus-transition text-left">Landing Pages</button></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-white hover:text-primary nexus-transition text-left">Automação</button></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-white hover:text-primary nexus-transition text-left">Desenvolvimento</button></li>
               </ul>
             </div>
 
@@ -66,10 +68,8 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-6">Empresa</h4>
               <ul className="space-y-3">
-                <li><a href="#" onClick={() => scrollToSection('about')} className="text-white hover:text-primary nexus-transition cursor-pointer">Sobre Nós</a></li>
-                <li><a href="#" onClick={() => scrollToSection('projects')} className="text-white hover:text-primary nexus-transition cursor-pointer">Projetos</a></li>
-                
-                
+                <li><button onClick={() => scrollToSection('about')} className="text-white hover:text-primary nexus-transition cursor-pointer text-left">Sobre Nós</button></li>
+                <li><Link to="/projetos" className="text-white hover:text-primary nexus-transition cursor-pointer">Projetos</Link></li>
               </ul>
             </div>
 
