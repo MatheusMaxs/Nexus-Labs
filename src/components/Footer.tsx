@@ -80,6 +80,7 @@ export const Footer = () => {
                 <p className="text-white">nexuslabs.devs@gmail.com</p>
                 <p className="text-white">+55 (66) 99656-3306</p>
                 <p className="text-white">São Paulo, Brasil
+
 Sinop - MT, Brasl</p>
               </div>
             </div>
