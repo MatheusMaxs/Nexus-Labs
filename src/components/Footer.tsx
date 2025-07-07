@@ -77,9 +77,10 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-6">Contato</h4>
               <div className="space-y-3">
-                <p className="text-white">contato@nexuslabs.com</p>
+                <p className="text-white">nexuslabs.devs@gmail.com</p>
                 <p className="text-white">+55 (66) 99656-3306</p>
-                <p className="text-white">São Paulo, Brasil</p>
+                <p className="text-white">São Paulo, Brasil
+Sinop - MT, Brasl</p>
               </div>
             </div>
           </div>
