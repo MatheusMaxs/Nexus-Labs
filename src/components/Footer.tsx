@@ -91,7 +91,7 @@ Sinop - MT, Brasl</p>
               <p className="text-gray-400 text-sm">
                 © {new Date().getFullYear()} Nexus Labs. Todos os direitos reservados.
               </p>
-              <div className="flex space-x-6">
+              <div className="flex space-x-6 px-[63px]">
                 <a href="#" className="text-gray-400 hover:text-primary nexus-transition text-sm">Privacidade</a>
                 <a href="#" className="text-gray-400 hover:text-primary nexus-transition text-sm">Termos</a>
                 <a href="#" className="text-gray-400 hover:text-primary nexus-transition text-sm">Cookies</a>
