@@ -7,7 +7,7 @@ import { Dumbbell, Shirt, Laptop, Calendar, Tent, Users, Building, Zap, ArrowLef
 export const Projects = () => {
   const allProjects = [
     {
-      name: "Arena Fit Training Center",
+      name: "Maxs fit Training Center",
       challenge: "Elevar a presença digital de uma academia líder em Sinop-MT, otimizando design, performance e captação de leads.",
       solution: "Com a agilidade do Lovable e insights de IA para otimização de conteúdo e CTAs, redesenhamos o site para um visual premium, carregamento ultrarrápido e uma jornada de conversão aprimorada.",
       results: [
