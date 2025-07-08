@@ -16,7 +16,6 @@ export const Projects = () => {
         "Otimização de SEO para maior visibilidade em buscas locais",
         "Aumento da percepção de marca como premium e moderna"
       ],
-      demoUrl: "https://arena-fit.vercel.app",
       icon: Dumbbell
     },
     {
