@@ -1,3 +1,5 @@
+<img src="Frame1.png" width="100px">
+
 # Nexus Labs
 
 A Nexus Labs é uma agência digital que se destaca no desenvolvimento web de alta performance, utilizando **inteligência artificial (IA)** para criar soluções que geram resultados tangíveis e impulsionam o crescimento de negócios.
